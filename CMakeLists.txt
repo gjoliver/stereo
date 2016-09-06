@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( depth )
+find_package( OpenCV )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( depth depth.cc )
+target_link_libraries( depth ${OpenCV_LIBS} )
